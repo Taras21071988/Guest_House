@@ -7,7 +7,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-  padding: 0 10px;
+	padding: 0 10px;
 }
 .main::before {
 	content: '';
@@ -39,4 +39,8 @@
 	background-color: var(--color-blue);
 	color: #fff;
 	padding: 9px 29px 10px;
+	transition: all 0.3s ease-in-out;
+}
+.main__button-btn:hover {
+	box-shadow: 0px 2px 20px 0px rgba(63, 140, 255, 0.5);
 }
