@@ -1,0 +1,41 @@
+.main {
+	background-image: url('/images/mainImage.jpeg');
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 680px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.main::before {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 96px;
+	background-image: url('/images/mainLine.png');
+	position: absolute;
+	bottom: 0;
+}
+.main__wrapper {
+	background-color: #fff;
+	padding: 22px 83px 40px;
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	border-radius: 10px;
+}
+.main__checkIn-input,
+.main__checkOut-input,
+.main__guest-input {
+	border: 1px solid rgb(217, 217, 217);
+	border-radius: 10px;
+	padding: 10px 20px;
+	color: #777777;
+}
+.main__button-btn {
+	border-radius: 10px;
+	background-color: var(--color-blue);
+	color: #fff;
+	padding: 9px 29px 10px;
+}

@@ -36,14 +36,14 @@
 	display: block;
 	width: 0;
 	height: 2px;
-	background-color: #3f8cff;
+	background-color: var(--color-blue);
 	transition: width 0.3s;
 }
 .header__item-link:hover::after {
 	width: 100%;
 }
 .header__item-link:hover {
-	color: #3f8cff;
+	color: var(--color-blue);
 }
 .header__social-list {
 	display: flex;
