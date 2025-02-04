@@ -1,0 +1,22 @@
+.description{
+  margin-bottom: 80px;
+}
+
+.description__title {
+	font-weight: 600;
+	font-size: 30px;
+	margin-bottom: 40px;
+	text-align: center;
+}
+.description__content {
+	display: flex;
+	justify-content: center;
+	gap: 37px;
+}
+.description__text-wrapper {
+	max-width: 669px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 20px;
+}
