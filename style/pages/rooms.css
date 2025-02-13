@@ -108,3 +108,31 @@
 	width: 100%;
 	border: 1px solid var(--color-blue);
 }
+.info__wrapper {
+	background-color: var(--color-blue);
+	padding: 53px 36px 90px 47px;
+	width: 589px;
+	color: var(--color-white);
+	margin-left: 18px;
+}
+.equipment__title {
+	font-size: 30px;
+	font-weight: 600;
+	line-height: 37px;
+	margin-bottom: 21px;
+}
+.equipment {
+	display: flex;
+	gap: 10px;
+	justify-content: space-between;
+	margin-bottom: 10px;
+}
+.info__title {
+	font-size: 16px;
+	font-weight: 600;
+}
+.info__text {
+	flex-basis: 70%;
+	font-size: 14px;
+	font-weight: 500;
+}
