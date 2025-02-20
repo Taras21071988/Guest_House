@@ -1,5 +1,5 @@
 .main {
-	margin-bottom: 670px;
+	margin-bottom: 200px;
 }
 .main__title {
 	font-size: 30px;
@@ -11,9 +11,11 @@
 	margin-bottom: 44px;
 }
 .room {
+	width: 98%;
 	border-radius: 6px;
 	box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.25);
 	padding: 18px 24px 32px 19px;
+	margin: 0 auto;
 	margin-bottom: 17px;
 	display: flex;
 	justify-content: space-between;
@@ -22,6 +24,10 @@
 }
 .room__img {
 	position: relative;
+}
+.room__img img {
+	width: 100%;
+	background-size: cover;
 }
 .room__quantity {
 	position: absolute;
@@ -102,23 +108,36 @@
 	margin-bottom: 14px;
 	position: relative;
 }
-.prise__choice::after {
-	position: absolute;
-	content: '';
+.test {
+	display: block;
+	min-height: 1px;
 	width: 100%;
-	border: 1px solid var(--color-blue);
+	background-color: var(--color-blue);
 }
+
 .info__wrapper {
-	position: relative;
+	display: flex;
+	justify-content: space-between;
+	gap: 10px;
+	/* height: 100vh; */
+	padding: 10px;
 }
 .info__equipment {
 	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
 	background-color: var(--color-blue);
 	padding: 53px 36px 90px 47px;
-	width: 589px;
+	max-width: 40%;
+	margin-top: 35px;
 	color: var(--color-white);
-	margin-left: 100px;
-	margin-top: 85px;
+	height: fit-content;
+}
+.info__rules {
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+	background-color: var(--color-white);
+	padding: 92px 34px 39px 40px;
+	max-width: 50%;
+	margin-right: 50px;
+	height: fit-content;
 }
 .equipment__title {
 	font-size: 30px;
@@ -132,6 +151,7 @@
 	justify-content: space-between;
 	margin-bottom: 10px;
 }
+
 .info__title {
 	font-size: 16px;
 	font-weight: 600;
@@ -142,16 +162,6 @@
 	font-weight: 500;
 }
 
-.info__rules {
-	position: absolute;
-	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
-	background-color: var(--color-white);
-	max-width: 671px;
-	top: 10%;
-	left: 48%;
-	z-index: 100;
-	padding: 92px 34px 39px 40px;
-}
 .rules__title {
 	font-size: 30px;
 	font-weight: 600;
@@ -166,4 +176,38 @@
 .rules__text span {
 	font-size: 16px;
 	font-weight: 600;
+}
+
+@media (max-width: 1000px) {
+	.room {
+		flex-direction: column;
+		align-items: normal;
+	}
+	.descr__price {
+		align-items: center;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+	.test {
+		display: none;
+	}
+	.prise__choice {
+		margin-bottom: 0;
+	}
+	.room__img img {
+		width: 100%;
+	}
+	.info__wrapper {
+		flex-direction: column;
+		align-items: center;
+	}
+	.info__equipment {
+		max-width: 70%;
+		min-height: fit-content;
+	}
+	.info__rules {
+		max-width: 80%;
+		min-height: fit-content;
+		margin-right: 0;
+	}
 }
